@@ -1,3 +1,3 @@
-React App with User Authentication.
+Adding User auth to react tutorial by Autho0
 
-From Robin Orheden's Scotch.io tutorial.
+https://auth0.com/blog/reactjs-authentication-tutorial/
