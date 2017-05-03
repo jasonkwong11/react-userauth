@@ -11,6 +11,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
+const AUDIENCE_ATTRIBUTE = process.env.AUDIENCE_ATTRIBUTE;
+const AUTH0_DOMAIN = process.env.AUTH0_DOMAIN;
+
 const authCheck = jwt({
   secret: jwks.expressJwtSecret({
         cache: true,
@@ -20,8 +23,8 @@ const authCheck = jwt({
         jwksUri: "https:///.well-known/jwks.json"
     }),
     // This is the identifier we set when we created the API
-    audience: '{YOUR-API-AUDIENCE-ATTRIBUTE}',
-    issuer: '{YOUR-AUTH0-DOMAIN}',
+    audience: AUDIENCE_ATTRIBUTE,
+    issuer: AUTH0_DOMAIN,
     algorithms: ['RS256']
 });
 

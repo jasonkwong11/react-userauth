@@ -1,4 +1,3 @@
-
 {
   "name": "deals",
   "version": "0.1.0",
@@ -7,16 +6,17 @@
     "react-scripts": "0.8.5"
   },
   "dependencies": {
-    "auth0-js": "^8.5.0",
+    "auth0-js": "^8.6.0",
     "auth0-lock": "^10.11.0",
     "axios": "^0.15.3",
-    "jwt-decode": "^2.1.0",
+    "fs": "^0.0.1-security",
+    "jwt-decode": "^2.2.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router": "^3.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start && node server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
