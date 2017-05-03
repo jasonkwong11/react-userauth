@@ -6,7 +6,7 @@ const ACCESS_TOKEN_KEY = 'access_token';
 
 const CLIENT_ID = 'S5WQ3b1iX6CR0ue21N0EvOb2g6RN02Gp';
 const CLIENT_DOMAIN = 'jasonkwong11.auth0.com';
-const REDIRECT = 'http://localhost:8080/callback';
+const REDIRECT = 'http://localhost:3000/callback';
 const SCOPE = 'YOUR_SCOPE';
 const AUDIENCE = 'http://chucknorrisworld.com';
 
@@ -58,13 +58,13 @@ function getParameterByName(name) {
   return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
 }
 
-//Get and store access_token in local storage
+// Get and store access_token in local storage
 export function setAccessToken() {
   let accessToken = getParameterByName('access_token');
   localStorage.setItem(ACCESS_TOKEN_KEY, accessToken);
 }
 
-//Get and store id_token in local storage
+// Get and store id_token in local storage
 export function setIdToken() {
   let idToken = getParameterByName('id_token');
   localStorage.setItem(ID_TOKEN_KEY, idToken);
