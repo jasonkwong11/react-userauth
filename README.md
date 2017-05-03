@@ -1,3 +1,7 @@
+This is React/Node app that shows Chuck Norris jokes. Chuck Norris food jokes are available to everyone on the root page, however special celebrity Chuck Norris jokes are protected with Auth0 authentication. User must be logged in the view the privileged jokes!
+
+This is my work from an Auth0 tutorial
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
